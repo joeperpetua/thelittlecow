@@ -10,7 +10,7 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-6">
+            <div class="col">
                 <h1>Add person</h1>
                 <div class="input-group mb-3">
                     <input type="text" class="form-control" placeholder="Name" aria-label="Name" id="person">
@@ -19,9 +19,25 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6 list-display">
-                <ul class="list-group" id="list"></ul>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1>Add item</h1>
+
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Item" aria-label="Item" id="item">
+                    <div class="input-group-append">
+                      <input type="text" class="form-control" placeholder="Price" aria-label="Price" id="price">
+                      <span class="input-group-text">€</span>
+                      <button class="btn btn-outline-secondary" type="button" id="item_btn" onclick="addItem()">Add</button>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="row">
+            <div class="col-5 list-display" id="list-user"></div>
+            <div class="col-2"></div>
+            <div class="col-5 list-display" id="list-item"></div>
         </div>
     </div>
 
