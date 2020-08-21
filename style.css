@@ -1,0 +1,9 @@
+.list-display{
+    padding: 5% 0;
+}
+
+.list-text{
+    display: inline-block;
+    margin: 0;
+    font-size: 1.5em;
+}
